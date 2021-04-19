@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>STUDENT DETAILS</title>
+
+<link rel="stylesheet" href="{%static 'index.css' %}" type="text/css">
+  
+</head>
+
+<body style="background-color:grey;">
+<h1><center>STUDENT DETAILS</center></h1>
+<div class="hom">
+
+<nav>
+    <div style="background-color:yellow;">
+    <h2><a href="{%url 'signup' %}">SIGN UP</a> </h2>
+    <h2><b><u>ADMIN MODULE</u></b></h2>
+    <h4><a href="{%url 'register' %}"> ADMIN REGISTER     |</a></h4>
+    <h4><a href="{%url 'login' %}"> ADMIN LOGIN     |</a></h4>
+    <h4><a href="{%url 'adminpage' %}"> ADMIN PAGE     |</a></h4>
+    <h2><b><u>STUDENT MODULE</u></b></h2>
+    <h4><a href="{%url 'studregister' %}"> STUDENT REGISTER    |</a></h4>
+    <h4><a href="{%url 'studlogin' %}" > STUDENT LOGIN   |</a> </h4>
+    <h4><a href="{%url 'studentpage' %}" > STUDENT PAGE   |</a> </h4>
+
+
+    </div>
+  <div>
+  </div>
+
+
+</nav>
+</div>
+
+</body>
+</html>

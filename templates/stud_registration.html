@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="{%static 'registrationstatic/css/demo.css' %}">
+		<link rel="stylesheet" href="{%static 'registrationstatic/css/sky-forms.css' %}">
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="{%static 'registrationstatic/css/sky-forms-ie8.css' %}">
+		<![endif]-->
+		
+		<!--[if lt IE 10]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="{%static 'registrationstatic/js/jquery.placeholder.min.js' %}"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="{%static 'registrationstatic/js/sky-forms-ie8.js' %}"></script>
+		<![endif]-->
+	</head>
+	<body class="bg-cyan">
+		<div class="body body-s">
+		
+			<form method="post" action="#" class="sky-form" enctype="multipart/form-data">
+				{% csrf_token %}
+
+
+					
+				<fieldset>
+					<section>
+						<div class="row">
+						<section class="col col-6">
+							<label class="input">
+								<h4>enter the name</h4>
+							</label>
+						</section>
+						<section class="col col-6">
+							<label class="input">
+								<input type="text" name="name" placeholder="name">
+							</label>
+						</section>
+					</div>
+					</section>
+					<section>
+						<div class="row">
+						<section class="col col-6">
+							<label class="input">
+								<h4>enter the student id</h4>
+							</label>
+						</section>
+						<section class="col col-6">
+							<label class="input">
+								<input type="number" name="name" placeholder="000-000-00">
+							</label>
+						</section>
+					</div>
+					</section>
+					<div class="row">
+						<section class="col col-6">
+							<label class="input">
+								<h4>enter the age</h4>
+							</label>
+						</section>
+						<section class="col col-6">
+							<label class="input">
+								<input type="number" name="age" placeholder="age">
+							</label>
+						</section>
+					</div>
+					</section>
+					<div class="row">
+						<section class="col col-6">
+							<label class="input">
+								<h4>phone number</h4>
+							</label>
+						</section>
+						<section class="col col-6">
+							<label class="input">
+								<input type="number" name="number" placeholder="+91 ">
+							</label>
+						</section>
+					</div>
+<!--					<section>-->
+<!--						<div class="row">-->
+<!--						<section class="col col-6">-->
+<!--							<label class="input">-->
+<!--								<h4>enter the password</h4>-->
+<!--							</label>-->
+<!--						</section>-->
+<!--						<section class="col col-6">-->
+<!--							<label class="input">-->
+<!--								<input type="password" name="name" placeholder="password">-->
+<!--								<h5> ! must contain symbol,upper and lower character </h5>-->
+
+<!--								<span toggle="#password"></span>-->
+<!--							</label>-->
+<!--						</section>-->
+<!--					</div>-->
+<!--					</section>-->
+<!--					<section>-->
+<!--						<div class="row">-->
+<!--						<section class="col col-6">-->
+<!--							<label class="input">-->
+<!--								<h4>re-enter the password</h4>-->
+<!--							</label>-->
+<!--						</section>-->
+<!--						<section class="col col-6">-->
+<!--							<label class="input">-->
+<!--								<input type="password" name="name" placeholder="password">-->
+<!--								<span toggle="#password"></span>-->
+<!--							</label>-->
+<!--						</section>-->
+<!--					</div>-->
+<!--					</section>-->
+					 <div class="row">
+						<section class="col col-6">
+							<label class="input">
+								<h4>upload image</h4>
+							</label>
+						</section>
+						<section class="col col-6">
+							<label class="input">
+								<input type='file'  name="image" />
+								<img id="blah" src="#"  />
+							</label>
+						</section>
+					 </div>
+				</fieldset>
+<!--				<fieldset>-->
+<!--					<section>-->
+<!--						<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>I agree to the Terms of Service</label>-->
+<!--					</section>-->
+<!--				</fieldset>-->
+				<footer>
+					<button type="submit" class="button">register</button>
+					{{ form.errors }}
+				</footer>
+			</form>
+			
+		</div>
+<!--	<footer>-->
+<!--		<div class="row">-->
+<!--        <div class="col-lg-12">-->
+<!--		<div class="footer__copyright">-->
+<!--        <div class="footer__copyright__text"><p>-->
+<!--		Copyright &copy;<script data-cfasync="false" src="{%static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart" aria-hidden="true"></i>-->
+<!--        </p></div>-->
+<!--        <div class="footer__copyright__payment"><img src="{%static 'img/payment-item.png' %}" alt=""></div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--        </div>-->
+
+<!--    </footer>-->
+	</body>
+</html>

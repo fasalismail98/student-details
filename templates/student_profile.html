@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	
+<head>
+		<title>profile</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="{%static 'profilestatic/css/demo.css' %}">
+		<link rel="stylesheet" href="{%static 'profilestatic/css/sky-forms.css' %}">
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="{%static 'profilestatic/css/sky-forms-ie8.css' %}">
+		<![endif]-->
+		
+		<!--[if lt IE 10]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="{%static 'profilestatic/js/jquery.placeholder.min.js' %}"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="{%static 'profilestatic/js/sky-forms-ie8.js' %}"></script>
+	        <style>
+             table, th, td {
+              border: 1px solid black;
+              }
+              <border:
+             </style>
+		<![endif]-->
+	</head>
+	<body class="bg-cyan">
+		<div class="body body-s">
+		
+			<form action="#" class="sky-form">
+				<div>
+					<div>
+				        <header> profile  </header>
+
+					</div>
+				</div>
+				<fieldset>
+					{% for data in instance %}
+					<section>
+						<img src={{data.image}} alt="">
+					</section>
+
+						<section>
+							<label class="input">
+							<i class="icon-append icon-user"></i>
+								<label> USER :</label>
+								<h5>{{data.name}}</h5>
+							<b class="tooltip tooltip-bottom-right">Only latin characters and numbers</b>
+						</label>
+
+						</section>
+					<section>
+							<label class="input">
+							<i class="icon-append icon-user"></i>
+								<label> STUDENT ID  :</label>
+								<h5>{{data.id}}</h5>
+							<b class="tooltip tooltip-bottom-right">Only latin characters and numbers</b>
+						</label>
+
+						</section>
+					<section>
+							<label class="input">
+							<i class="icon-append icon-user"></i>
+								<label> AGE:</label>
+								<h5>{{data.age}}</h5>
+							<b class="tooltip tooltip-bottom-right">Only latin characters and numbers</b>
+						</label>
+
+						</section>
+					<section>
+							<label class="input">
+							<i class="icon-append icon-user"></i>
+								<label> PHONE NUMBER:</label>
+								<h5>{{data.phone}</h5>
+							<b class="tooltip tooltip-bottom-right">Only latin characters and numbers</b>
+						</label>
+
+						</section>
+					{% endfor %}
+				</fieldset>
+
+			</form>
+			
+		</div>
+</body>
+</html>
